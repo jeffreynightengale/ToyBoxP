@@ -34,6 +34,13 @@ namespace Classes_ToyBox
                     toy1.Name = Console.ReadLine();
                     Console.WriteLine("Enter the Price of the Toy >>");
                     toy1.Price = Convert.ToDouble(Console.ReadLine());
+                    do
+                    {
+                        Console.WriteLine("Please enter a note");
+                        toy1.GettingNotes(Console.ReadLine());
+
+                        Console.WriteLine($"Do you have another note?");
+                    } while (Console.ReadLine().ToLower()[0] == 'y');
                     //toy1.GettingNotes("Crazy fun for the whole family!");
                     //toy1.GettingNotes("Ages 5+");
 
