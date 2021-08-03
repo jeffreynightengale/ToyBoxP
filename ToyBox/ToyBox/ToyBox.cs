@@ -2,19 +2,27 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ToyBox
+namespace Classes_ToyBox
 {
-    class ToyBox
+    public class ToyBox
     {
-        public List<string> Toys { get; set; }
+        public List<Toy> Toys { get; set; }
         public string Owner { get; set; }
         public string Location { get; set; }
         public ToyBox()
         {
-            Toys = new List<string>();
+            Toys = new List<Toy>();
             Owner = string.Empty;
             Location = string.Empty;
         }
-        
+
+        public Toy GetRandomToy()
+        {
+            Random rand = new Random();
+            int randomNum = rand.Next(0, Toys.Count);
+
+            Toy randomToy = Toys[randomNum];
+            return randomToy;
+        }
     }
 }

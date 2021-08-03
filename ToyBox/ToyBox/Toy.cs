@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ToyBox
+namespace Classes_ToyBox
 {
-    class Toy
+    public class Toy
     {
         public string Manufacturer { get; set; }
         public string Name { get; set; }
