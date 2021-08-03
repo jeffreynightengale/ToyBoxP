@@ -19,10 +19,15 @@ namespace Classes_ToyBox
         public Toy GetRandomToy()
         {
             Random rand = new Random();
-            int randomNum = rand.Next(0, Toys.Count);
+            //int randomNum = rand.Next(0, Toys.Count);
 
-            Toy randomToy = Toys[randomNum];
-            return randomToy;
+            //Toy randomToy = Toys[randomNum];
+            return Toys[rand.Next(0, Toys.Count)];
+        }
+
+        public override string ToString()
+        {
+            return ($"{Owner}'s toy box is located at {Location}");
         }
     }
 }
