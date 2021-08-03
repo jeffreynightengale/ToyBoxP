@@ -55,7 +55,7 @@ namespace Classes_ToyBox
                 Console.WriteLine($"{currentToyBox.Owner}'s ToyBox is located @ {currentToyBox.Location}.  The ToyBox has {currentToyBox.Toys.Count} toys inside of it:");
                 foreach (Toy toyInCurrentBox in currentToyBox.Toys)
                 {
-                    Console.WriteLine(toyInCurrentBox.Name);
+                    Console.WriteLine(toyInCurrentBox);
                 }
             }
 

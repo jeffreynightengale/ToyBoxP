@@ -24,10 +24,5 @@ namespace Classes_ToyBox
             //Toy randomToy = Toys[randomNum];
             return Toys[rand.Next(0, Toys.Count)];
         }
-
-        public override string ToString()
-        {
-            return ($"{Owner}'s toy box is located at {Location}");
-        }
     }
 }

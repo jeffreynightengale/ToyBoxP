@@ -37,5 +37,13 @@ namespace Classes_ToyBox
             string aisleNumber = $"{Manufacturer[0]}{randomNum}";
             return aisleNumber;
         }
+
+        public override string ToString()
+        {
+            return ($"{Name} (Aisle {GetAisle()}) was created by {Manufacturer} " +
+                $"worth {Price.ToString("C2")}. " +
+                $"The notes for toy 1 are: {ReturningNotes()}.");
+
+        }
     }
 }
